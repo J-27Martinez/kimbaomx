@@ -2,18 +2,18 @@
 
 namespace Tests\Feature;
 
-use App\GaleryArchive;
+use App\GalleryArchive;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
-class GaleryTest extends TestCase
+class GalleryTest extends TestCase
 {
     use RefreshDatabase;
 
     /** @test */
     public function can_view_galery_records()
     {
-        $archive = GaleryArchive::factory()->count(8)->create()->first();
+        $archive = GalleryArchive::factory()->count(8)->create()->first();
 
         $this->get('/')
             ->assertSuccessful();

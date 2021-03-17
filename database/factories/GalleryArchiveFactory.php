@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\GaleryArchive;
+use App\GalleryArchive;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class GaleryArchiveFactory extends Factory
+class GalleryArchiveFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = GaleryArchive::class;
+    protected $model = GalleryArchive::class;
 
     /**
      * Define the model's default state.

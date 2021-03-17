@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGaleryArchivesTable extends Migration
+class CreateGalleryArchivesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateGaleryArchivesTable extends Migration
      */
     public function up()
     {
-        Schema::create('galery_archives', function (Blueprint $table) {
+        Schema::create('gallery_archives', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
             $table->string('excerpt', 250);
@@ -30,6 +30,6 @@ class CreateGaleryArchivesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('galery_archives');
+        Schema::dropIfExists('gallery_archives');
     }
 }
